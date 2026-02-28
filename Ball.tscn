@@ -1,0 +1,570 @@
+[gd_scene load_steps=81 format=3 uid="uid://bpmkjhy55o8d1"]
+
+[ext_resource type="Texture2D" uid="uid://d0bu2h5iwbe1m" path="res://marbles/OldMarbles/Kubernetes.png" id="1_1ph4j"]
+[ext_resource type="Texture2D" uid="uid://1gc6hbmgf7l0" path="res://marbles/OldMarbles/BootStrap.png" id="1_kff3n"]
+[ext_resource type="Texture2D" uid="uid://bekhuktikrhkc" path="res://marbles/OldMarbles/Ansible.png" id="2_5783u"]
+[ext_resource type="Texture2D" uid="uid://djvi2qaymks7o" path="res://marbles/OldMarbles/Docker.png" id="3_v8vuf"]
+[ext_resource type="Texture2D" uid="uid://0m7s8hhjrrte" path="res://marbles/OldMarbles/AWS.png" id="5_yblbl"]
+[ext_resource type="Texture2D" uid="uid://bx8dikn0l7mei" path="res://marbles/OldMarbles/Azure.png" id="6_2heyq"]
+[ext_resource type="Texture2D" uid="uid://h1uuhb2ofry3" path="res://marbles/OldMarbles/Helm.png" id="7_l3x1k"]
+[ext_resource type="Texture2D" uid="uid://d10lxfvufxlaw" path="res://marbles/OldMarbles/Linux.png" id="8_rcavw"]
+[ext_resource type="Texture2D" uid="uid://bvcme68wcpujy" path="res://marbles/OldMarbles/Microsoft.png" id="9_b63hu"]
+[ext_resource type="Texture2D" uid="uid://cwk6qwshem11m" path="res://marbles/OldMarbles/OpenShift.png" id="10_xano8"]
+[ext_resource type="Texture2D" uid="uid://b16oixbnlmrvl" path="res://marbles/OldMarbles/RedHat.png" id="11_jwp05"]
+[ext_resource type="Texture2D" uid="uid://p1qpv8bt76dq" path="res://marbles/OldMarbles/ApacheDataFusion.png" id="12_45i6h"]
+[ext_resource type="Texture2D" uid="uid://btxqcqemwvuhe" path="res://marbles/OldMarbles/ApacheHTTPServer.png" id="13_0aq80"]
+[ext_resource type="Texture2D" uid="uid://ded0a8mue5sct" path="res://marbles/OldMarbles/ApacheSpark.png" id="14_m4psb"]
+[ext_resource type="Texture2D" uid="uid://duh4jwga5l30n" path="res://marbles/OldMarbles/AzureDevOps.png" id="15_nqkhv"]
+[ext_resource type="Texture2D" uid="uid://u67q55o13wok" path="res://marbles/OldMarbles/DeltaLake.png" id="16_h83pa"]
+[ext_resource type="Texture2D" uid="uid://c3cwax6ylrqu7" path="res://marbles/OldMarbles/DynaTrace.png" id="17_ei7e6"]
+[ext_resource type="Texture2D" uid="uid://bs34wm4fawvp3" path="res://marbles/OldMarbles/ElasticSearch.png" id="18_32g1c"]
+[ext_resource type="Texture2D" uid="uid://cabflamec87b4" path="res://marbles/OldMarbles/Flink.png" id="19_cqcmk"]
+[ext_resource type="Texture2D" uid="uid://bd5m8nu1jexn" path="res://marbles/OldMarbles/Git.png" id="20_0qktf"]
+[ext_resource type="Texture2D" uid="uid://dcaqwtwop1pwd" path="res://marbles/OldMarbles/GitLab.png" id="21_ogkt6"]
+[ext_resource type="Texture2D" uid="uid://dnqgabmiws1ro" path="res://marbles/OldMarbles/GoogleCloudPlatform.png" id="22_nq48g"]
+[ext_resource type="Texture2D" uid="uid://jnaydaop8oun" path="res://marbles/OldMarbles/Grafana.png" id="23_kauyn"]
+[ext_resource type="Texture2D" uid="uid://cdclwruxw1mo1" path="res://marbles/OldMarbles/IBMCloud.png" id="24_pc0ja"]
+[ext_resource type="Texture2D" uid="uid://bnwm1fl0o0e2k" path="res://marbles/OldMarbles/InfluxDB.png" id="25_3hk31"]
+[ext_resource type="Texture2D" uid="uid://ha8bgv2sp2ai" path="res://marbles/OldMarbles/Kafka.png" id="26_y1mhr"]
+[ext_resource type="Texture2D" uid="uid://biwugxm2es0ht" path="res://marbles/OldMarbles/Kibana.png" id="27_ci1m0"]
+[ext_resource type="Texture2D" uid="uid://dr3wx8jrn4bty" path="res://marbles/OldMarbles/LogStash.png" id="28_ikuv7"]
+[ext_resource type="Texture2D" uid="uid://bix3xl0vpqnen" path="res://marbles/OldMarbles/Nginx.png" id="29_im5pv"]
+[ext_resource type="Texture2D" uid="uid://c84ynophcym2a" path="res://marbles/OldMarbles/OpenRestY.png" id="30_dkdcc"]
+[ext_resource type="Texture2D" uid="uid://bhbbekn2tkk5c" path="res://marbles/OldMarbles/OpenSource.png" id="31_02qt2"]
+[ext_resource type="Texture2D" uid="uid://co0e8pwktkuyc" path="res://marbles/OldMarbles/Prometheus.png" id="32_0qn6t"]
+[ext_resource type="Texture2D" uid="uid://v1st2nehoupd" path="res://marbles/OldMarbles/RabbitMQ.png" id="33_rkvcj"]
+[ext_resource type="Texture2D" uid="uid://dwwhfp5al7bpa" path="res://marbles/OldMarbles/Telegraf.png" id="34_rmxei"]
+[ext_resource type="Texture2D" uid="uid://b1mnci2jwtvf" path="res://marbles/OldMarbles/VMWare.png" id="35_vgcc3"]
+[ext_resource type="Texture2D" uid="uid://b1myashupdcqv" path="res://marbles/OldMarbles/Bash.png" id="36_lp1pr"]
+[ext_resource type="Texture2D" uid="uid://cxn6d4i6mskhs" path="res://marbles/OldMarbles/C.png" id="37_eakn7"]
+[ext_resource type="Texture2D" uid="uid://eivvriclgtol" path="res://marbles/OldMarbles/CPlusPlus.png" id="38_34puw"]
+[ext_resource type="Texture2D" uid="uid://dif11nry6bn4y" path="res://marbles/OldMarbles/CSharp.png" id="39_tld16"]
+[ext_resource type="Texture2D" uid="uid://ce2ii8ax4vpuo" path="res://marbles/OldMarbles/Go.png" id="40_fj6ko"]
+[ext_resource type="Texture2D" uid="uid://bd1ld0w8pbdld" path="res://marbles/OldMarbles/JavaScript.png" id="41_ximbc"]
+[ext_resource type="Texture2D" uid="uid://c7fg2qxlfjooy" path="res://marbles/OldMarbles/Perl.png" id="42_ktf1f"]
+[ext_resource type="Texture2D" uid="uid://bnw7npf8amw4h" path="res://marbles/OldMarbles/PowerShell.png" id="43_0685t"]
+[ext_resource type="Texture2D" uid="uid://nykn2uybo1et" path="res://marbles/OldMarbles/Python.png" id="44_155m3"]
+[ext_resource type="Texture2D" uid="uid://byewmpeejxx0l" path="res://marbles/OldMarbles/Rust.png" id="45_oo51r"]
+[ext_resource type="Texture2D" uid="uid://dpt07o8ofa6f4" path="res://marbles/OldMarbles/Scala.png" id="46_e5u1r"]
+[ext_resource type="Texture2D" uid="uid://b1g4b1ms300w2" path="res://marbles/OldMarbles/SQL.png" id="47_1plok"]
+[ext_resource type="Texture2D" uid="uid://0fm1lyg2k3kh" path="res://marbles/OldMarbles/TypeScript.png" id="48_nucnn"]
+[ext_resource type="Texture2D" uid="uid://ks1mso5cl7bn" path="res://marbles/OldMarbles/Zig.png" id="49_pdk0b"]
+[ext_resource type="Texture2D" uid="uid://celoj3qvrqnkc" path="res://marbles/OldMarbles/ApacheArrow.png" id="50_c0skf"]
+[ext_resource type="Texture2D" uid="uid://dldxf2euip1so" path="res://marbles/OldMarbles/ApacheParquet.png" id="51_fdluh"]
+[ext_resource type="Texture2D" uid="uid://dwa7i1uv7lvtd" path="res://marbles/OldMarbles/Bizmonx.png" id="52_a43qp"]
+[ext_resource type="Texture2D" uid="uid://bxatpdw3u0cst" path="res://marbles/OldMarbles/Citrix.png" id="53_5lv2k"]
+[ext_resource type="Texture2D" uid="uid://jtku1s48ec7m" path="res://marbles/OldMarbles/Django.png" id="54_65udf"]
+[ext_resource type="Texture2D" uid="uid://6yxkhuorl78j" path="res://marbles/OldMarbles/DuckDB.png" id="55_gdij3"]
+[ext_resource type="Texture2D" uid="uid://bnauuo7ap8tnj" path="res://marbles/OldMarbles/F5.png" id="56_1dyh0"]
+[ext_resource type="Texture2D" uid="uid://c335r77dchgb2" path="res://marbles/OldMarbles/Hadoop.png" id="57_d7plw"]
+[ext_resource type="Texture2D" uid="uid://dn4txwo8ih5y5" path="res://marbles/OldMarbles/HandleBars.png" id="58_bwcof"]
+[ext_resource type="Texture2D" uid="uid://c63upgloml82c" path="res://marbles/OldMarbles/HTMX.png" id="59_onedr"]
+[ext_resource type="Texture2D" uid="uid://d3ym7ese73tan" path="res://marbles/OldMarbles/IBM_ITM.png" id="60_nwiet"]
+[ext_resource type="Texture2D" uid="uid://cix6hyup6f0xy" path="res://marbles/OldMarbles/Jetty.png" id="61_5nhsv"]
+[ext_resource type="Texture2D" uid="uid://dv0wbpi6d7ebn" path="res://marbles/OldMarbles/Lua.png" id="62_edwoy"]
+[ext_resource type="Texture2D" uid="uid://rewrt8t1kfc5" path="res://marbles/OldMarbles/MakeFile.png" id="63_77mmw"]
+[ext_resource type="Texture2D" uid="uid://k6vgt1cyk55u" path="res://marbles/OldMarbles/MongoDB.png" id="64_al87u"]
+[ext_resource type="Texture2D" uid="uid://8jabdi881vqy" path="res://marbles/OldMarbles/Mustache.png" id="65_1c4d8"]
+[ext_resource type="Texture2D" uid="uid://cenyga3p8fjsj" path="res://marbles/OldMarbles/MySQL.png" id="66_ovcdy"]
+[ext_resource type="Texture2D" uid="uid://cpratj74j1t6j" path="res://marbles/OldMarbles/NodeJS.png" id="67_87tiw"]
+[ext_resource type="Texture2D" uid="uid://cd32u32est18t" path="res://marbles/OldMarbles/Numpy.png" id="68_4udba"]
+[ext_resource type="Texture2D" uid="uid://dnl54c6stxr3b" path="res://marbles/OldMarbles/Pandas.png" id="69_tvigu"]
+[ext_resource type="Texture2D" uid="uid://b64e346qdsfop" path="res://marbles/OldMarbles/PolarDB.png" id="70_s8coi"]
+[ext_resource type="Texture2D" uid="uid://cgqoh0g3gstmh" path="res://marbles/OldMarbles/PostgreSQL.png" id="71_fxqk4"]
+[ext_resource type="Texture2D" uid="uid://bfx6bewatv3gn" path="res://marbles/OldMarbles/React.png" id="72_pfxkx"]
+[ext_resource type="Texture2D" uid="uid://i48uf0njvuhm" path="res://marbles/OldMarbles/SharePoint.png" id="73_5na4c"]
+[ext_resource type="Texture2D" uid="uid://b7so5ksqpuor2" path="res://marbles/OldMarbles/Templ.png" id="74_s8j46"]
+[ext_resource type="Texture2D" uid="uid://j3gg7y3f2ju1" path="res://marbles/OldMarbles/TenseOrFlow.png" id="75_kxhqt"]
+[ext_resource type="Texture2D" uid="uid://4x2ek2l5nmxt" path="res://marbles/OldMarbles/Terraform.png" id="76_jbkvf"]
+[ext_resource type="Texture2D" uid="uid://djsxm85wsksyc" path="res://marbles/OldMarbles/Tomcat.png" id="77_7h5np"]
+[ext_resource type="Texture2D" uid="uid://del7pst4k35wd" path="res://marbles/OldMarbles/WordPress.png" id="78_vtaha"]
+[ext_resource type="Texture2D" uid="uid://ctjfp4p0podyn" path="res://marbles/OldMarbles/Zap.png" id="79_qqp24"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hflf5"]
+radius = 22.0
+
+[node name="BALL" type="Area2D"]
+position = Vector2(0, 2)
+scale = Vector2(0.5, 0.5)
+collision_layer = 3
+collision_mask = 3
+
+[node name="Kubernetes" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.122083, 0.122083)
+texture = ExtResource("1_1ph4j")
+
+[node name="BootStrap" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(110.944, 92.7297)
+scale = Vector2(0.122326, 0.122326)
+texture = ExtResource("1_kff3n")
+offset = Vector2(-3, -16)
+
+[node name="Ansible" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(78.9443, 89.7297)
+scale = Vector2(0.120911, 0.120911)
+texture = ExtResource("2_5783u")
+offset = Vector2(-5, 3)
+
+[node name="Docker" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94427, 2.72974)
+scale = Vector2(0.120833, 0.120833)
+texture = ExtResource("3_v8vuf")
+
+[node name="AWS" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.122083, 0.122083)
+texture = ExtResource("5_yblbl")
+
+[node name="Azure" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.122083, 0.122083)
+texture = ExtResource("6_2heyq")
+
+[node name="Helm" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.122083, 0.122083)
+texture = ExtResource("7_l3x1k")
+
+[node name="Linux" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.122083, 0.122083)
+texture = ExtResource("8_rcavw")
+
+[node name="Microsoft" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.122083, 0.122083)
+texture = ExtResource("9_b63hu")
+
+[node name="OpenShift" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.122083, 0.122083)
+texture = ExtResource("10_xano8")
+
+[node name="RedHat" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.122083, 0.122083)
+texture = ExtResource("11_jwp05")
+
+[node name="DataFusion" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("12_45i6h")
+
+[node name="ApacheHTTPServer" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("13_0aq80")
+
+[node name="ApacheSpark" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("14_m4psb")
+
+[node name="AzureDevOps" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("15_nqkhv")
+
+[node name="DeltaLake" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("16_h83pa")
+
+[node name="DynaTrace" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("17_ei7e6")
+
+[node name="ElasticSearch" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("18_32g1c")
+
+[node name="Flink" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("19_cqcmk")
+
+[node name="Git" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("20_0qktf")
+
+[node name="GitLab" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("21_ogkt6")
+
+[node name="GoogleCloudPlatform" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("22_nq48g")
+
+[node name="Grafana" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("23_kauyn")
+
+[node name="DataFusion13" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("24_pc0ja")
+
+[node name="DataFusion14" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("25_3hk31")
+
+[node name="DataFusion15" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("26_y1mhr")
+
+[node name="DataFusion16" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("27_ci1m0")
+
+[node name="DataFusion17" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("28_ikuv7")
+
+[node name="DataFusion18" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("29_im5pv")
+
+[node name="DataFusion19" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("30_dkdcc")
+
+[node name="DataFusion20" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("31_02qt2")
+
+[node name="DataFusion21" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("32_0qn6t")
+
+[node name="DataFusion22" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("33_rkvcj")
+
+[node name="DataFusion23" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("34_rmxei")
+
+[node name="VMWare" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("35_vgcc3")
+
+[node name="VMWare2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("36_lp1pr")
+
+[node name="VMWare3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("37_eakn7")
+
+[node name="VMWare4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("38_34puw")
+
+[node name="VMWare5" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("39_tld16")
+
+[node name="VMWare6" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("40_fj6ko")
+
+[node name="VMWare7" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("41_ximbc")
+
+[node name="VMWare8" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("42_ktf1f")
+
+[node name="VMWare9" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("43_0685t")
+
+[node name="VMWare10" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("44_155m3")
+
+[node name="VMWare11" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("45_oo51r")
+
+[node name="VMWare12" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("46_e5u1r")
+
+[node name="VMWare13" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("47_1plok")
+
+[node name="VMWare14" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("48_nucnn")
+
+[node name="Zig" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("49_pdk0b")
+
+[node name="Zig2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("50_c0skf")
+
+[node name="Zig3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("51_fdluh")
+
+[node name="Zig4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("52_a43qp")
+
+[node name="Zig5" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("53_5lv2k")
+
+[node name="Zig6" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("54_65udf")
+
+[node name="Zig7" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("55_gdij3")
+
+[node name="Zig8" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("56_1dyh0")
+
+[node name="Zig9" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("57_d7plw")
+
+[node name="Zig10" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("58_bwcof")
+
+[node name="Zig11" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("59_onedr")
+
+[node name="Zig12" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("60_nwiet")
+
+[node name="Zig13" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("61_5nhsv")
+
+[node name="Zig14" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("62_edwoy")
+
+[node name="Zig15" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("63_77mmw")
+
+[node name="Zig16" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("64_al87u")
+
+[node name="Zig17" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("65_1c4d8")
+
+[node name="Zig18" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("66_ovcdy")
+
+[node name="Zig19" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("67_87tiw")
+
+[node name="Zig20" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("68_4udba")
+
+[node name="Zig21" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("69_tvigu")
+
+[node name="Zig22" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("70_s8coi")
+
+[node name="Zig23" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("71_fxqk4")
+
+[node name="Zig24" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("72_pfxkx")
+
+[node name="Zig25" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("73_5na4c")
+
+[node name="Zig26" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("74_s8j46")
+
+[node name="Zig27" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("75_kxhqt")
+
+[node name="Zig28" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("76_jbkvf")
+
+[node name="Zig29" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("77_7h5np")
+
+[node name="Zig30" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("78_vtaha")
+
+[node name="Zap" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.94426, 2.72974)
+scale = Vector2(0.120937, 0.120937)
+texture = ExtResource("79_qqp24")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.45574, 0.929737)
+shape = SubResource("CircleShape2D_hflf5")
