@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2cstgmi2e4yf"
-path="res://.godot/imported/SnekTake2.png-ca4247e027713a0bcd5ae02520a95981.ctex"
+path="res://.godot/imported/SnekTake2.png-c546bc049152135b25b27081e5954e42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://apache2/SnekTake2.png"
-dest_files=["res://.godot/imported/SnekTake2.png-ca4247e027713a0bcd5ae02520a95981.ctex"]
+source_file="res://snake-web/SnekTake2.png"
+dest_files=["res://.godot/imported/SnekTake2.png-c546bc049152135b25b27081e5954e42.ctex"]
 
 [params]
 

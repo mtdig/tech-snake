@@ -1,0 +1,6 @@
+.godot
+marbles/
+snake-web/
+*.gd
+*.tscn
+*.godot
