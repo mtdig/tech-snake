@@ -17,6 +17,9 @@ jobs:
     runs-on: ubuntu-24.04
     container:
       image: barichello/godot-ci:4.5.2
+      credentials:
+        username: mtdig
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     steps:
       - name: Checkout repository
@@ -48,6 +51,9 @@ jobs:
     runs-on: ubuntu-24.04
     container:
       image: barichello/godot-ci:4.5.2
+      credentials:
+        username: mtdig
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     steps:
       - name: Checkout repository
@@ -79,6 +85,9 @@ jobs:
     runs-on: ubuntu-24.04
     container:
       image: barichello/godot-ci:4.5.2
+      credentials:
+        username: mtdig
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     steps:
       - name: Checkout repository
