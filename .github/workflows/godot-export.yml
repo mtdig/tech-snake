@@ -12,56 +12,101 @@ env:
   PROJECT_NAME: "SnekTake2"
 
 jobs:
-  export:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        include:
-          - preset: "Linux"
-            export_path: "build/linux/SnekTake2.x86_64"
-            artifact: "linux"
-          - preset: "Snake"
-            export_path: "build/windows/SnekTake2.exe"
-            artifact: "windows"
-          - preset: "macOS"
-            export_path: "build/macos/SnekTake2.zip"
-            artifact: "macos"
-
-    name: Export (${{ matrix.preset }})
+  export-linux:
+    name: Export (Linux)
+    runs-on: ubuntu-24.04
     container:
-      image: barichello/godot-ci:4.5
+      image: barichello/godot-ci:4.5.2
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
-      - name: Setup export templates
+      - name: Setup
         run: |
-          mkdir -p /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable
-          mv /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable.mono/* \
-             /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable/ 2>/dev/null || true
-          ls /root/.local/share/godot/export_templates/ || true
+          mkdir -v -p ~/.local/share/godot/export_templates/
+          mkdir -v -p ~/.config/
+          mv /root/.config/godot ~/.config/godot
+          mv /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
 
-      - name: Create export directory
-        run: mkdir -p $(dirname "${{ matrix.export_path }}")
-
-      - name: Import project
-        run: godot --headless --import 2>&1 || true
-        timeout-minutes: 5
-
-      - name: Export ${{ matrix.preset }}
-        run: godot --headless --export-release "${{ matrix.preset }}" "${{ matrix.export_path }}"
-        timeout-minutes: 10
+      - name: Linux Build
+        run: |
+          mkdir -v -p build/linux
+          godot --headless --verbose --export-release "Linux" "build/linux/${PROJECT_NAME}.x86_64"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ env.PROJECT_NAME }}-${{ matrix.artifact }}
-          path: build/${{ matrix.artifact }}/
+          name: ${{ env.PROJECT_NAME }}-linux
+          path: build/linux/
+          retention-days: 30
+
+  export-windows:
+    name: Export (Windows)
+    runs-on: ubuntu-24.04
+    container:
+      image: barichello/godot-ci:4.5.2
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Setup
+        run: |
+          mkdir -v -p ~/.local/share/godot/export_templates/
+          mkdir -v -p ~/.config/
+          mv /root/.config/godot ~/.config/godot
+          mv /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
+
+      - name: Windows Build
+        run: |
+          mkdir -v -p build/windows
+          godot --headless --verbose --export-release "Snake" "build/windows/${PROJECT_NAME}.exe"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PROJECT_NAME }}-windows
+          path: build/windows/
+          retention-days: 30
+
+  export-macos:
+    name: Export (macOS)
+    runs-on: ubuntu-24.04
+    container:
+      image: barichello/godot-ci:4.5.2
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Setup
+        run: |
+          mkdir -v -p ~/.local/share/godot/export_templates/
+          mkdir -v -p ~/.config/
+          mv /root/.config/godot ~/.config/godot
+          mv /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
+
+      - name: macOS Build
+        run: |
+          mkdir -v -p build/macos
+          godot --headless --verbose --export-release "macOS" "build/macos/${PROJECT_NAME}.zip"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PROJECT_NAME }}-macos
+          path: build/macos/
           retention-days: 30
 
   release:
-    needs: export
+    needs: [export-linux, export-windows, export-macos]
     if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     permissions:
