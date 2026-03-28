@@ -4,6 +4,11 @@
 
 A pixel snake game, written in Godot.
 
+## Releases
+For MacOS (silicon), Windows (x86_64) and Linux (amd64/arm64).
+
+[Releases](https://github.com/mtdig/tech-snake/releases)
+
 ## WASM
 
 Compiled to WASM.
