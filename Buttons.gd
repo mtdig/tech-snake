@@ -16,6 +16,8 @@ func _ready():
 
 func _input(event):
 	if self.visible:
+		if event is InputEventKey and event.is_pressed() and event.keycode == KEY_Q:
+			get_tree().quit()
 		if event is InputEventMouseButton and event.is_pressed():
 			if IsOnButtonStart:
 				OnStart()
