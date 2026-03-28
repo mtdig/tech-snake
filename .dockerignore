@@ -1,6 +1,12 @@
 .godot
+.github/
 marbles/
 snake-web/
+tst/
 *.gd
+*.gd.uid
 *.tscn
 *.godot
+*.md
+flake.*
+export_presets.cfg
