@@ -1,5 +1,24 @@
 # Godot 4+ specific ignores
 .godot/
-SnakeWeb/
 .env
+
+# Test / local builds
 tst/
+
+# Web export artifacts (root)
+SnekTake2.html
+SnekTake2.js
+SnekTake2.pck
+SnekTake2.wasm
+SnekTake2.png
+SnekTake2.icon.png
+SnekTake2.apple-touch-icon.png
+SnekTake2.audio.worklet.js
+SnekTake2.audio.position.worklet.js
+
+# Duplicate web export dirs
+snake-web/
+SnakeWeb/
+
+# Build artifacts
+snake-web.zip
